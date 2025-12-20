@@ -34,9 +34,13 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
   useEffect(() => {
     if (phase === 'terminal') {
       let lineIndex = 0;
+      const commands = [...terminalCommands]; // Create stable copy
       const interval = setInterval(() => {
-        if (lineIndex < terminalCommands.length) {
-          setTerminalLines(prev => [...prev, terminalCommands[lineIndex].text]);
+        if (lineIndex < commands.length) {
+          const command = commands[lineIndex];
+          if (command) {
+            setTerminalLines(prev => [...prev, command.text]);
+          }
           lineIndex++;
         } else {
           clearInterval(interval);
