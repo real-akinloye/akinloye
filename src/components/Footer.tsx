@@ -44,7 +44,7 @@ const Footer = () => {
             </h4>
             <div className="flex gap-4">
               <a
-                href="https://github.com"
+                href="https://github.com/real-akinloye"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-terminal-green transition-colors"
@@ -52,7 +52,7 @@ const Footer = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/akinloye-ogbon"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-terminal-green transition-colors"
@@ -60,7 +60,7 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:contact@akinloyenuel.me"
+                href="mailto:akinloyeemmanuel06@gmail.com"
                 className="text-muted-foreground hover:text-terminal-green transition-colors"
               >
                 <Mail className="w-5 h-5" />
