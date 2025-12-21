@@ -1,4 +1,4 @@
-import { Terminal, Github, Linkedin, Mail } from 'lucide-react';
+import { Terminal, Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -43,6 +43,14 @@ const Footer = () => {
               &gt; Connect
             </h4>
             <div className="flex gap-4">
+              <a
+                href="https://x.com/SNR_AKINLOYE"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-terminal-green transition-colors"
+              >
+                <Twitter className="w-5 h-5" />
+              </a>
               <a
                 href="https://github.com/real-akinloye"
                 target="_blank"
