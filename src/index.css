@@ -132,12 +132,12 @@
   }
 
   .card-terminal {
-    @apply bg-card border border-border p-6 relative overflow-hidden;
+    @apply bg-card border border-border p-6 pt-12 relative overflow-hidden;
   }
 
   .card-terminal::before {
     content: '';
-    @apply absolute top-0 left-0 right-0 h-8 bg-muted flex items-center px-3;
+    @apply absolute top-0 left-0 right-0 h-6 bg-muted;
   }
 
   .btn-terminal {
