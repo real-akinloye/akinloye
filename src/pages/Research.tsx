@@ -13,6 +13,14 @@ interface ResearchPaper {
 const researchPapers: ResearchPaper[] = [
   {
     id: 1,
+    title: "The R's Threats: ASI Danger",
+    abstract: 'An exploration of Artificial Superintelligence risks and existential threats posed by unaligned AI systems. Examines the race dynamics, recursive self-improvement, and the urgent need for alignment research.',
+    date: '2025',
+    category: 'AI Safety',
+    tags: ['ASI', 'Existential Risk', 'AI Alignment', 'Superintelligence'],
+  },
+  {
+    id: 2,
     title: 'Cybersecurity Threats in Emerging Markets',
     abstract: 'An in-depth analysis of evolving cybersecurity threats facing developing economies and proposed mitigation strategies.',
     date: '2024',
@@ -20,7 +28,7 @@ const researchPapers: ResearchPaper[] = [
     tags: ['Security', 'Emerging Markets', 'Threats'],
   },
   {
-    id: 2,
+    id: 3,
     title: 'Digital Privacy in the Age of Surveillance',
     abstract: 'Examining the balance between national security and individual privacy rights in the digital era.',
     date: '2024',
@@ -28,7 +36,7 @@ const researchPapers: ResearchPaper[] = [
     tags: ['Privacy', 'Surveillance', 'Rights'],
   },
   {
-    id: 3,
+    id: 4,
     title: 'Social Engineering: The Human Factor',
     abstract: 'Research on psychological manipulation techniques used in cyber attacks and defense mechanisms.',
     date: '2023',
@@ -36,7 +44,7 @@ const researchPapers: ResearchPaper[] = [
     tags: ['Psychology', 'Security', 'Human Factor'],
   },
   {
-    id: 4,
+    id: 5,
     title: 'Blockchain for Secure Voting Systems',
     abstract: 'Exploring the potential of blockchain technology in creating transparent and secure electoral processes.',
     date: '2023',
