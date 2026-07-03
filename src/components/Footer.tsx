@@ -1,4 +1,4 @@
-import { Terminal, Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -8,28 +8,25 @@ const Footer = () => {
     <footer className="bg-card border-t border-border py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <Terminal className="w-5 h-5 text-terminal-green" />
-              <span className="font-mono text-terminal-green">akinloye_nuel</span>
+            <div>
+              <span className="text-lg font-semibold text-foreground tracking-wide">Akinloye Nuel</span>
             </div>
             <p className="text-muted-foreground text-sm">
-              Researcher • Activist • Developer
+              Product leadership • Research • Market infrastructure
             </p>
           </div>
 
-          {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="font-mono text-terminal-green text-sm uppercase tracking-wider">
-              &gt; Navigate
+            <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider">
+              Navigate
             </h4>
             <div className="space-y-2">
-              {['Research', 'Awareness', 'Sociopolitics', 'Portfolio'].map((link) => (
+              {['Research', 'Technocracy', 'Portfolio'].map((link) => (
                 <Link
                   key={link}
                   to={`/${link.toLowerCase()}`}
-                  className="block text-muted-foreground hover:text-terminal-green transition-colors text-sm"
+                  className="block text-muted-foreground hover:text-foreground transition-colors text-sm"
                 >
                   {link}
                 </Link>
@@ -37,17 +34,16 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Connect */}
           <div className="space-y-4">
-            <h4 className="font-mono text-terminal-green text-sm uppercase tracking-wider">
-              &gt; Connect
+            <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider">
+              Connect
             </h4>
             <div className="flex gap-4">
               <a
-                href="https://x.com/SNR_AKINLOYE"
+                href="https://x.com/real-akinloye"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-terminal-green transition-colors"
+                className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Twitter className="w-5 h-5" />
               </a>
@@ -55,7 +51,7 @@ const Footer = () => {
                 href="https://github.com/real-akinloye"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-terminal-green transition-colors"
+                className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Github className="w-5 h-5" />
               </a>
@@ -63,13 +59,13 @@ const Footer = () => {
                 href="https://linkedin.com/in/akinloye-ogbon"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-terminal-green transition-colors"
+                className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
                 href="mailto:akinloyeemmanuel06@gmail.com"
-                className="text-muted-foreground hover:text-terminal-green transition-colors"
+                className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Mail className="w-5 h-5" />
               </a>
@@ -79,12 +75,11 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-muted-foreground text-sm font-mono">
-              <span className="text-terminal-green">&gt;</span> {currentYear} Akinloye Nuel. All rights reserved.
+            <p className="text-muted-foreground text-sm">
+              {currentYear} Akinloye Nuel. All rights reserved.
             </p>
-            <p className="text-muted-foreground text-xs font-mono">
-              <span className="text-terminal-green">STATUS:</span> ONLINE
-              <span className="inline-block w-2 h-2 bg-terminal-green rounded-full ml-2 animate-pulse" />
+            <p className="text-muted-foreground text-xs">
+              Designed for executive audiences.
             </p>
           </div>
         </div>
