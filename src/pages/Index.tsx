@@ -35,8 +35,8 @@ const Index = () => {
     },
     {
       icon: Code,
-      title: 'Technocracy',
-      description: 'Bridging technology, policy, and governance to shape resilient digital systems.',
+      title: 'National Reforms & Technocracy',
+      description: '83+ structural reforms across 18 pillars for Nigeria—including sanctions-resistant settlement and monetary architecture.',
       link: '/technocracy',
     },
     {
